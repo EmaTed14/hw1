@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+   color: orange; 
+   
+   text-align: center;
+
+}
+
+.ricette_inserite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  /* Styles for each recipe element */
+  .ricetta {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ricetta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff8800;
+    
+  }
+  .ricetta h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff8800;
+    font-weight: lighter;
+  }
+  
+  .ricetta img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .ricetta ul{
+    white-space: pre-line;
+  }
+  .ricetta p {
+    margin-bottom: 5px;
+    white-space: pre-line;
+  }
+  
+ 
+  
+
+ 

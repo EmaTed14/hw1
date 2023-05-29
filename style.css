@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body
+{
+   font-family: 'Montserrat', sans-serif;
+  margin: 0px 0px ;
+}
+
+
+/*Stile per la navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    
+    
+  }
+  
+  .navbar-logo
+  {
+   font-size: 25px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #ff8800;
+  }
+   /*Stili per i link della navbaar*/
+  .navbar-links {
+    
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .navbar-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+   
+   padding: 7px 7px;
+    display: flex;
+  text-align: center;
+  align-items: center;
+   
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+    /*Quando si passa sopra i link della navarbar con il mouse cambiano colore*/
+    .navbar-links a:hover {
+      color: orangered ;
+    }
+
+
+    header
+    {display: flex;
+        background-image: url("./img/sfondo3.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        
+    }
+
+
+    #overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      height: 700px;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .testo
+    {
+      
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+      z-index: 1;
+     margin:0 auto;
+      font-weight: 200;
+      font-size: 22px;
+
+    
+    }
+
+
+      /*Stile per il footer*/
+  footer {
+   display: flex;
+   background-color: #ffffff;
+   font-size: 14px;
+   font-weight: lighter;
+   color: rgb(6, 6, 6);
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   height: 50px;
+  
+   width: 100%;
+ }

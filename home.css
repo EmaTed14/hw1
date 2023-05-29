@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+body
+{
+   font-family: 'Montserrat', sans-serif;
+  margin: 0px 0px ;
+}
+
+
+/*Stile per la navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    
+    
+  }
+  
+  .navbar .logo
+  {
+   font-size: 25px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #ff8800;
+  }
+   /*Stili per i link della navbaar*/
+  .navbar a {
+    
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  
+   padding: 7px 7px;
+    display: flex;
+  text-align: center;
+  align-items: center;
+      margin-left: 5px;
+   
+  }
+
+    /*Quando si passa sopra i link della navarbar con il mouse cambiano colore*/
+    .navbar a:hover {
+      color: orangered ;
+    }
+
+
+    header
+    {display: flex;
+        background-image: url("./img/food.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        
+    }
+
+/* Stile per il form di ricerca */
+#cerca_ricetta {
+display: flex;
+align-items: center;
+color: #ff8800;
+}
+
+/* Stile per l'input di ricerca */
+#contenuto_ricerca {
+padding: 5px;
+border: none;
+border-radius: 5px;
+margin-right: 5px;
+}
+
+#cerca_ricetta {
+  padding: 5px 10px;
+  background-color: #ff8800;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  }
+  
+
+
+/* Stile per il pulsante di ricerca */
+#cerca_ricetta button {
+padding: 5px 10px;
+background-color: #ff8800;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+}
+
+/* Stile per il pulsante di ricerca al passaggio del mouse */
+#cerca_ricetta button:hover {
+background-color: #FFA000;
+}
+
+/* Stile per la sezione benvenuto */
+.benvenuto {
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.benvenuto h1 {
+font-size: 32px;
+font-weight: bold;
+margin-bottom: 20px;
+color: white;
+}
+
+.benvenuto p {
+font-size: 18px;
+color: white;
+}
+
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  z-index: 1;
+}
+
+
+footer {
+  display: flex;
+  background-color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #ff8800;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: -1px 9px 20px 0px rgb(255 75 0 / 55%);
+  height: 50px;
+  position:relative;
+  width: 100%;
+  margin-top:10px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/*Stili inserimento ricetta quando si carica la pagina*/
+
+.ricetta {
+  margin-top: 20px;
+  position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #F8F4F1;
+    border-radius: 5px;
+    box-shadow: 5px -3px 4px #ff880052;
+        width: 80%;
+        
+  }
+  
+  .ricetta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff8800;
+  }
+  
+  .ricetta img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+       
+  }
+
+  .ricetta h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff8800;
+    font-weight: lighter;
+
+  }
+    
+  .ricetta p {
+    
+    margin-bottom: 5px;
+    white-space: pre-line;
+    color: #000000;
+  }
+  
+  .ricette_inserite {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
